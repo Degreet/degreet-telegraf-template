@@ -1,8 +1,9 @@
 {
-  "name": "tg-bot-template",
-  "version": "1.0.0",
+  "name": "create-degreet-telegraf",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
+  "bin": "./bin/cli.js",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
@@ -10,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Degreet/tg-bot-template.git"
+    "url": "git+https://github.com/Degreet/degreet-telegraf-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Degreet/tg-bot-template/issues"
+    "url": "https://github.com/Degreet/degreet-telegraf-template/issues"
   },
-  "homepage": "https://github.com/Degreet/tg-bot-template#readme",
+  "homepage": "https://github.com/Degreet/degreet-telegraf-template#readme",
   "dependencies": {
     "mongoose": "^6.1.3",
     "telegraf": "3.39",
