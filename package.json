@@ -1,0 +1,34 @@
+{
+  "name": "tg-bot-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "prod": "cross-env-shell NODE_ENV=production \"node index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Degreet/tg-bot-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Degreet/tg-bot-template/issues"
+  },
+  "homepage": "https://github.com/Degreet/tg-bot-template#readme",
+  "dependencies": {
+    "mongoose": "^6.1.3",
+    "telegraf": "3.39",
+    "telegraf-i18n": "^6.6.0",
+    "telegraf-markup4": "^1.0.2",
+    "telegraf-sender": "^1.2.0"
+  },
+  "devDependencies": {
+    "config": "^3.3.6",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}
