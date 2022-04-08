@@ -15,7 +15,7 @@ void (async () => {
   const mongoUri = config.get('mongoUri')
   await db.connect(mongoUri)
 
-  // setup scenes
+  // init scenes
   const stage = new Stage([])
 
   // setup i18n (multi-lang)
@@ -28,13 +28,16 @@ void (async () => {
   // setup middlewares
   bot.use(sender)
   bot.use(session())
-  bot.use(stage.middleware())
   bot.use(i18n.middleware())
   bot.use(authMiddleware)
 
+  // setup scenes
+  bot.use(stage.middleware())
+
   // setup composers (routes)
   bot.use(
-    require('./composers/start.composer')
+    require('./composers/start.composer'),
+    require('./composers/admin.composer')
   )
 
   // catch bot errors
