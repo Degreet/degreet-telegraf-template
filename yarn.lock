@@ -918,19 +918,14 @@ telegraf-i18n@^6.6.0:
     debug "^4.0.1"
     js-yaml "^3.6.1"
 
-telegraf-markup4@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/telegraf-markup4/-/telegraf-markup4-1.0.2.tgz#d4555dda501e481a8a3781df6e74d4accfb36e5d"
-  integrity sha512-Fhi7y25yHzN2QdRxyJc0g6D2QTKoK9CYuIVRgiSFo2hGa8GyVDaQ+bLrYDWCar5YiRRUCkp4cW0AHC2A1VewHA==
+telegraf-sender@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/telegraf-sender/-/telegraf-sender-2.1.0.tgz#b5b91d55b755fdd1ae228710d8295670c81020f8"
+  integrity sha512-NgDyuTYuxzPFswmxDwJYzoXlnB4t0Mmsphk8xcxXtalUDG3/9xfVEu1iRapt4dwtwtbFjUfGrdNragJH8Sf2bQ==
   dependencies:
-    telegraf "^3.38.0"
+    telegraf "3.39"
 
-telegraf-sender@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/telegraf-sender/-/telegraf-sender-1.2.0.tgz#1a03a25257fa1fbffa99ded1be59205b46646f0b"
-  integrity sha512-Jsqf0Do5mXmPOQQR6Fm+zqFEz1pulBQt4EKmH0QWvkellcXugAqSOswc2xhhb25oY16yTirY08LuQleNmoaz9g==
-
-telegraf@3.39, telegraf@^3.38.0:
+telegraf@3.39:
   version "3.39.0"
   resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.39.0.tgz#32a7ed464c80802fe3177619d2a9c53413487850"
   integrity sha512-6u5UyW2KpMS/hwC4DKLGlicK/rVSYCahPFgF14ioP6BzwcDwQlciHCB/oWguvxLJaYGrvY6crzLHfjupFTBPXw==

@@ -1,7 +1,7 @@
 const authMiddleware = require('./middleware/auth.middleware')
 const db = require('./core/db')
 
-const { Telegraf, session, Stage } = require('telegraf')
+const { Telegraf, Stage, session } = require('telegraf')
 const TelegrafI18n = require('telegraf-i18n')
 const sender = require('telegraf-sender')
 const config = require('config')
@@ -37,7 +37,7 @@ void (async () => {
   // setup composers (routes)
   bot.use(
     require('./composers/start.composer'),
-    require('./composers/admin.composer')
+    require('./composers/admin.composer'),
   )
 
   // catch bot errors
